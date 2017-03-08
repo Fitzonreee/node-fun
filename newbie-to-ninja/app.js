@@ -1,3 +1,6 @@
+// node newbie-to-ninja/app
+// nodemon newbie-to-ninja/app
+
 var math = require("./math");
 var fs = require("fs");
 var _ = require("lodash");
