@@ -45,3 +45,5 @@ users.forEach(getProfile);
 // users.forEach(username => {
 //   getProfile(username);
 // });
+
+// TODO: Add error handling

@@ -33,3 +33,6 @@ function getWeather(query) {
 // getWeather('95030');
 const locations = process.argv.slice(2);
 locations.forEach(getWeather);
+
+// TODO: Make with work other syntax: New York NY
+// TODO: Add error handling
