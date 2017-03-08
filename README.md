@@ -6,4 +6,4 @@ This follows some exersises from the **Newbie to Ninja with Node.js** course by 
 
 Remember to do run `npm install` command after cloning this repo.
 
-Run `node treehouse/< name of file>` or `node newbie-to-ninja/< name of file>` to run the respective scripts.
+Run `node treehouse/<name of file>` or `node newbie-to-ninja/<name of file>` to run the respective scripts.

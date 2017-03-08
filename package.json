@@ -11,8 +11,8 @@
     "mocha": "^3.2.0"
   },
   "scripts": {
-    "start": "node treehouse/node-basics",
-    "dev": "nodemon treehouse/node-basics",
+    "start": "node treehouse/users-points",
+    "dev": "nodemon treehouse/users-points",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
