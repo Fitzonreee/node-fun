@@ -1,5 +1,5 @@
 // 'use strict';
-// node treehouse/users-points
+// node treehouse/users-points.js
 
 // Problem: We need a simple way to look at a user's badge count and JavaScript points
 // Solution: Use Node.js to connect to Treehouse's API to get profile information and print out
@@ -35,9 +35,13 @@ function getProfile(username) {
 // getProfile('kevinfitzhenry');
 // getProfile('alenaholligan');
 
-const users = ["kevinfitzhenry", "chalkers", "alenaholligan"];
+// get console inputs through the process object
+// console.log(process.argv);
+
+const users = process.argv.slice(2);
+users.forEach(getProfile);
+
+// Or
 // users.forEach(username => {
 //   getProfile(username);
 // });
-// Or
-users.forEach(getProfile);
