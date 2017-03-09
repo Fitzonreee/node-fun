@@ -12,7 +12,6 @@ function printMessage(weather) {
 // Takes in either a Zip Code or City State (Hollywood CA)
 function getWeather(query) {
   // Connect to API URL
-  const apiKey = '';
   const request = https.get(`https://api.wunderground.com/api/${secrets.weatherApiKey}/geolookup/conditions/q/${query}.json`, response => {
     // Read the data
     var body = "";

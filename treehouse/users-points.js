@@ -7,6 +7,11 @@
 const https = require('https');
 // const username = 'kevinfitzhenry';
 
+// Print Error Messages
+function printError(error) {
+  console.error(error.message);
+}
+
 // Function to print message to console
 function printMessage(username, badgeCount, points) {
   const message = `${username} has ${badgeCount} badge(s) and ${points} total points`;
@@ -15,21 +20,30 @@ function printMessage(username, badgeCount, points) {
 // printMessage('kfitzhenry', 189, 23430);
 
 function getProfile(username) {
-  // Connect to API URL (https://teamtreehouse.com/username.json)
-  const request = https.get(`https://teamtreehouse.com/${username}.json`, response => {
-    // Read the data
-    var body = "";
-    response.on('data', data => {
-      body += data.toString();
+  try {
+    // Connect to API URL (https://teamtreehouse.com/username.json)
+    const request = https.get(`https://teamtreehouse.com/${username}.json`, response => {
+      // Read the data
+      var body = "";
+      response.on('data', data => {
+        body += data.toString();
+      });
+      // Response has finished
+      response.on('end', () => {
+        try {
+          // Parsing = turning a string into a data structure (object)
+          const profile = JSON.parse(body);
+          // Print the data
+          printMessage(username, profile.badges.length, profile.points.total);
+        } catch (error) {
+          printError(error)
+        }
+      });
     });
-    // Response has finished
-    response.on('end', () => {
-      // Parsing = turning a string into a data structure (object)
-      const profile = JSON.parse(body);
-      // Print the data
-      printMessage(username, profile.badges.length, profile.points.total);
-    });
-  });
+    request.on('error', printError);
+  } catch (error) {
+    printError(error)
+  }
 }
 
 // getProfile('kevinfitzhenry');
