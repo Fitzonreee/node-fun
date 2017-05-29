@@ -44,3 +44,23 @@ function greaterThanY(arr, y) {
   console.log(counter);
 }
 // greaterThanY(arrNums, 17);
+
+
+// Max, Min, Average
+// 5 - Given an array, print the max, the min and average values for that array
+function maxMinAvg(arr) {
+  let max = arr[0];
+  let min = arr[0];
+  let sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+    sum = sum + arr[i];
+    if (arr[i] > max) {
+      max = arr[i]
+    } else if (arr[i] < min) {
+      min = arr[i]
+    }
+  }
+  var avg = sum / arr.length;
+  console.log(max, min, avg);
+}
+maxMinAvg(arrNums);
