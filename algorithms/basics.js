@@ -118,11 +118,26 @@ function getAvg(arr) {
 
 // Square the values
 // Square each value in a given array, returning that same array with changed values
+function squareValues(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i] * arr[i];
+  }
+  console.log(`The following numbers have been squared: ${arr}`);
+}
+// squareValues(arr);
 
 
 // Zero Out Negative Numbers
 // Return the  given array, after setting any negative values to 0
-
+function zeroOutNegs(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] < 0) {
+      arr[i] = 0;
+    }
+  }
+  console.log(`Negative numbers replaced with zero: ${arr}`);
+}
+// zeroOutNegs(arr);
 
 // Shift Array Values
 // Given an array, move all values forward by one index, dropping the first and leaving a '0' value at the end
