@@ -39,6 +39,16 @@ function printMax(arr) {
 
 // Array with Odds
 // Create an array with all the odd integers between 1 and 255 (inclusive)
+function arrOdds() {
+  var arrayOdds = [];
+  for (var i = 1; i <= 255; i++) {
+    if (i % 2 != 0) {
+      arrayOdds.push(i);
+    }
+  }
+  console.log(`${arrayOdds}`);
+}
+// arrOdds();
 
 // Greater Than Y
 // Given an array and a value Y, count and print the number of array values greater than Y
@@ -141,3 +151,14 @@ function zeroOutNegs(arr) {
 
 // Shift Array Values
 // Given an array, move all values forward by one index, dropping the first and leaving a '0' value at the end
+function shiftOne(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = arr[i + 1];
+    if (arr[i] == undefined) {
+      arr[i] = 0;
+    }
+  }
+  console.log(arr);
+}
+
+shiftOne(arrNums);
