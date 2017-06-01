@@ -1,11 +1,7 @@
-// The "Basic 13" - Coding Dojo Algorithm Workbook page 27
 let arr = [0, 1, -22, 2, 3, -5, 66, 67, 88, 90, 17, -1];
 let arrMixed = [16, 28, "Kevin", "Patrick", 1989, "Fitzhenry", true];
 let arrNums = [1, 2, 3, 66, 67, 88, 90, 17];
 
-
-// Print 1-255
-// Print all the integers from 1 to 255
 function print255() {
   for (var i = 1; i <= 255; i++) {
     console.log(i);
@@ -13,8 +9,6 @@ function print255() {
 }
 // print255();
 
-// Print Ints and Sum 0-255
-// Print integers from 0 to 255, and with each integer print the sum so far
 function print255AndSum() {
   let sum = 0;
   for (var i = 1; i <= 255; i++) {
@@ -24,8 +18,6 @@ function print255AndSum() {
 }
 // print255AndSum();
 
-// Find and Print Max
-// Given an array, find and print its largest element
 function printMax(arr) {
   let max = arr[0];
   for (var i = 0; i < arr.length; i++) {
@@ -37,8 +29,6 @@ function printMax(arr) {
 }
 // printMax(arr);
 
-// Array with Odds
-// Create an array with all the odd integers between 1 and 255 (inclusive)
 function arrOdds() {
   var arrayOdds = [];
   for (var i = 1; i <= 255; i++) {
@@ -50,8 +40,6 @@ function arrOdds() {
 }
 // arrOdds();
 
-// Greater Than Y
-// Given an array and a value Y, count and print the number of array values greater than Y
 function greaterThanY(arr, y) {
   counter = 0;
   for (var i = 0; i < arr.length; i++) {
@@ -63,8 +51,6 @@ function greaterThanY(arr, y) {
 }
 // greaterThanY(arrNums, 17);
 
-// Max, Min, Average
-// Given an array, print the max, the min and average values for that array
 function maxMinAvg(arr) {
   let max = arr[0];
   let min = arr[0];
@@ -82,8 +68,6 @@ function maxMinAvg(arr) {
 }
 // maxMinAvg(arrNums);
 
-// Swap String For Array Negative values
-// Given an array of numbers, replace any negative values with the string 'Dojo'
 function replaceNegs(arr) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] < 0) {
@@ -94,8 +78,6 @@ function replaceNegs(arr) {
 }
 // replaceNegs(arr);
 
-// Print Odds 1 - 255
-// Print all the odd integers from 1 to 255
 function printOdds255() {
   for (var i = 1; i <= 255; i++) {
     if (i % 2 !== 0) {
@@ -105,8 +87,6 @@ function printOdds255() {
 }
 // printOdds255();
 
-// Interate and Print Array
-// Iterate through a given array, printing each value
 function printArray(arr) {
   for (var i = 0; i < arr.length; i++) {
     console.log(arr[i]);
@@ -114,8 +94,6 @@ function printArray(arr) {
 }
 // printArray(arrMixed);
 
-// Get and Print Average
-// Analyze and array's values and print the avergae
 function getAvg(arr) {
   let sum = 0;
   for (var i = 0; i < arr.length; i++) {
@@ -126,8 +104,6 @@ function getAvg(arr) {
 }
 // getAvg(arr);
 
-// Square the values
-// Square each value in a given array, returning that same array with changed values
 function squareValues(arr) {
   for (var i = 0; i < arr.length; i++) {
     arr[i] = arr[i] * arr[i];
@@ -136,9 +112,6 @@ function squareValues(arr) {
 }
 // squareValues(arr);
 
-
-// Zero Out Negative Numbers
-// Return the  given array, after setting any negative values to 0
 function zeroOutNegs(arr) {
   for (var i = 0; i < arr.length; i++) {
     if (arr[i] < 0) {
@@ -149,8 +122,6 @@ function zeroOutNegs(arr) {
 }
 // zeroOutNegs(arr);
 
-// Shift Array Values
-// Given an array, move all values forward by one index, dropping the first and leaving a '0' value at the end
 function shiftOne(arr) {
   for (var i = 0; i < arr.length; i++) {
     arr[i] = arr[i + 1];
@@ -160,5 +131,4 @@ function shiftOne(arr) {
   }
   console.log(arr);
 }
-
-shiftOne(arrNums);
+// shiftOne(arrNums);

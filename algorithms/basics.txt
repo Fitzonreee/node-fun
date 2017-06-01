@@ -1,0 +1,40 @@
+The "Basic 13" - Coding Dojo Algorithm Workbook page 27
+
+Print 1-255
+Print all the integers from 1 to 255
+
+Print Ints and Sum 0-255
+Print integers from 0 to 255, and with each integer print the sum so far
+
+Find and Print Max
+Given an array, find and print its largest element
+
+Array with Odds
+Create an array with all the odd integers between 1 and 255 (inclusive)
+
+Greater Than Y
+Given an array and a value Y, count and print the number of array values greater than Y
+
+Max, Min, Average
+Given an array, print the max, the min and average values for that array
+
+Swap String For Array Negative values
+Given an array of numbers, replace any negative values with the string 'Dojo'
+
+Print Odds 1 - 255
+Print all the odd integers from 1 to 255
+
+Iterate and Print Array
+Iterate through a given array, printing each value
+
+Get and Print Average
+Analyze and array's values and print the average
+
+Square the values
+Square each value in a given array, returning that same array with changed values
+
+Zero Out Negative Numbers
+Return the  given array, after setting any negative values to 0
+
+Shift Array Values
+Given an array, move all values forward by one index, dropping the first and leaving a '0' value at the end
