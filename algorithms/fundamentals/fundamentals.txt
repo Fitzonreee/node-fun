@@ -1,0 +1,9 @@
+Sigma
+Implement a function sigma, that given a number, returns the sum of all the positive integers up to number (inclusive)
+Ex. sigma(3) = 6 or (1 + 2 + 3)
+Ex. sigma(5) = 15 or (1 + 2 + 3 + 4 + 5)
+
+Factorial
+Write a function factorial, that given a number, returns the product (multiplication) of all the positive integers from 1 up to number (inclusive)
+Ex. factorial(3) = 6 or (1 * 2 * 3)
+Ex. factorial(5) = 120 or (1 * 2 * 3 * 4 * 5)
